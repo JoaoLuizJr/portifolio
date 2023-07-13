@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Caveat&family=Gruppo&family=Ysabeau+Infant:wght@1&display=swap');
+
+:root{
+    --color-main: rgb(119,0,255);
+    --color-text: black;
+
+    --font-principal: 'Gruppo', sans-serif;
+    --font-secundaria: 'Caprasimo', cursive;
+    --font-terciaria: 'Caveat', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: white;
+    color: black;
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 2%;
+}
+
+.cabecalho__links{
+    display: flex;
+    gap: 50px;
+    text-decoration: nano;
+}
+
+.cabecalho__links__link{
+    font-family: var(--font-principal);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-main);
+    text-decoration: none;
+}
+
+.desing-main{
+    margin: 5% 15%;
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.desing-main__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.desing-main__conteudo__titulo{
+    font-size: 2.25rem;
+    font-family: var(--font-secundaria);
+}
+
+.style-title{
+    color:var(--color-main);
+}
+
+.desing-main__conteudo__titulo__texto{
+    font-size: 1.5rem;
+    font-family: var(--font-terciaria);
+}
+
+.desing-main__links__titulo{
+    color: var(--color-main);
+    font-family: var(--font-principal);
+}
+
+.desing-main__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.desing-main__links__link{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    border: 2px solid var(--color-text);
+    color: var(--color-text);
+    width: 50%;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 15px 0;
+    text-decoration: none;
+    font-family: var(--font-principal);
+}
+
+.desing-main__links__link:hover{
+    background-color: var(--color-main);
+}
+
+.desing-main__links__link__imagem{
+    width: 20px;
+}
+
+.desing-main__imagem{
+    width: 50%;
+    margin-right: 6%;
+    border-radius: 10%;
+}
+
+.rodape{
+    padding: 24px;
+    margin-top: 22.7%;
+    color: rgb(255, 255, 255);
+    background-color: var(--color-main);
+    text-align: center;
+    font-family: var(--font-principal);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media(max-width: 1200px){
+    .cabecalho{
+        padding: 10%;
+    }
+    .cabecalho__links{
+        justify-content: center;
+    }
+    .desing-main{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .desing-main__conteudo{
+        width: auto;
+    }
+}
